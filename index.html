@@ -149,7 +149,7 @@ function spawnFruit(force=false){
  const r=bomb?22:22+Math.random()*8;
  const x=35+Math.random()*Math.max(1,W-70);
  // Strong upward launch. Negative velocity moves fruit upward on canvas.
- const vy=-(H*(.68+Math.random()*.15)/1.55);
+ const vy=-(H*(1.15+Math.random()*.35)/1.55);
  fruits.push({
   x,y:H+r+5,vx:(Math.random()-.5)*(W<500?150:220),
   vy,r,type:bomb?null:types[Math.floor(Math.random()*types.length)],
